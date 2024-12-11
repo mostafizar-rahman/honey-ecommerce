@@ -8,7 +8,7 @@ const Header = () => {
         <header className="px-[15px] lg:px-15 pt-12 bg-background">
             <div className="flex justify-between items-center mb-[88px]">
                 <a href="/">
-                    <img src="/public/images/logo.png" alt="logo" className="xl:w-auto w-32" />
+                    <img src="/images/logo.png" alt="logo" className="xl:w-auto w-32" />
                 </a>
                 <div className="flex items-center xl:gap-[73px] gap-15">
                     <div className="lg:hidden block">
