@@ -27,11 +27,11 @@ const Card = ({ description, price, thumbnail, title, borderColor, titleColor, b
                             <img src="/images/star.png" alt="star" />
                         </div>
                     </div>
-                    <a href="#" className={cn("lg:text-4xl text-[26px] lg:leading-normal font-semibold text-primary-foreground", titleColor)}>{title}</a>
+                    <a href="#" className={cn("lg:text-4xl text-[26px] lg:leading-normal font-semibold text-primary-foreground hover:opacity-80 transition-all duration-500", titleColor)}>{title}</a>
                     <p className="mt-2 pb-8 text-lg text-[rgba(82,131,171,0.60)] leading-normal">{description}</p>
                 </div>
                 <div className="flex justify-end">
-                    <button className={cn("bg-primary px-8 py-4 font-bold lg:text-[32px] text-[26px] text-white rounded-tl-[20px] rounded-br-[14px]", btnColor)}>Show product</button>
+                    <button className={cn("bg-primary px-8 py-4 font-bold lg:text-[32px] text-[26px] text-white rounded-tl-[20px] rounded-br-[14px] hover:opacity-80 transition-all duration-500", btnColor)}>Show product</button>
                 </div>
             </div>
         </div>

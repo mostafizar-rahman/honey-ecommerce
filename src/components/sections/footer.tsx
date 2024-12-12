@@ -7,19 +7,19 @@ const Footer = () => {
         <div>
           <h2 className="text-primary-foreground xl:text-[80px] lg:text-6xl text-[50px] font-salsa text-center md:text-left">
             <span className="block">Meem</span>
-            <span className="block mt-3">Home</span>
+            <span className="block">Home</span>
           </h2>
           <div className="flex gap-2 mt-[18px]">
-            <a href="#">
+            <a href="#" className="hover:opacity-80 transition-all duration-500">
               <img src="/images/whatsapp.png" alt="whatsapp" />
             </a>
-            <a href="#">
+            <a href="#" className="hover:opacity-80 transition-all duration-500">
               <img src="/images/tiktok.png" alt="tiktok" />
             </a>
-            <a href="#">
+            <a href="#" className="hover:opacity-80 transition-all duration-500">
               <img src="/images/Facebook.png" alt="facebook" />
             </a>
-            <a href="#">
+            <a href="#" className="hover:opacity-80 transition-all duration-500">
               <img src="/images/instagram.png" alt="instagram" />
             </a>
           </div>
@@ -27,11 +27,11 @@ const Footer = () => {
         <div className="md:w-auto w-full">
           <h6 className="text-primary-foreground font-semibold lg:text-4xl text-3xl underline text-center">Quick Links</h6>
           <ul className="flex flex-col items-center gap-4 mt-7">
-            <li><a href="#" className="text-primary-foreground lg:text-[32px] sm:text-[26px] text-xl">Home</a></li>
-            <li><a href="#" className="text-primary-foreground lg:text-[32px] sm:text-[26px] text-xl">About</a></li>
-            <li><a href="#" className="text-primary-foreground lg:text-[32px] sm:text-[26px] text-xl">Contact</a></li>
-            <li><a href="#" className="text-primary-foreground lg:text-[32px] sm:text-[26px] text-xl">Terms & Conditins</a></li>
-            <li><a href="#" className="text-primary-foreground lg:text-[32px] sm:text-[26px] text-xl">Privacy policy</a></li>
+            <li><a href="#" className="text-primary-foreground lg:text-[32px] sm:text-[26px] text-xl hover:opacity-80 transition-all duration-500">Home</a></li>
+            <li><a href="#" className="text-primary-foreground lg:text-[32px] sm:text-[26px] text-xl hover:opacity-80 transition-all duration-500">About</a></li>
+            <li><a href="#" className="text-primary-foreground lg:text-[32px] sm:text-[26px] text-xl hover:opacity-80 transition-all duration-500">Contact</a></li>
+            <li><a href="#" className="text-primary-foreground lg:text-[32px] sm:text-[26px] text-xl hover:opacity-80 transition-all duration-500">Terms & Conditins</a></li>
+            <li><a href="#" className="text-primary-foreground lg:text-[32px] sm:text-[26px] text-xl hover:opacity-80 transition-all duration-500">Privacy policy</a></li>
           </ul>
         </div>
         <div className="xl:w-auto w-full">

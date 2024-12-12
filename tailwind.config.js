@@ -64,9 +64,28 @@ export default {
         "25": "100px",
         "30": "120px",
       },
-      fontFamily:{
-        salsa:"var(--salsa)"
-      }
+      fontFamily: {
+        salsa: "var(--salsa)",
+        italianno: "var(--italianno)",
+      },
+      fontSize: {
+        'xs': ['0.75rem', { lineHeight: 'normal' }],
+        'sm': ['0.875rem', { lineHeight: 'normal' }],
+        'base': ['1rem', { lineHeight: 'normal' }],
+        'lg': ['1.125rem', { lineHeight: 'normal' }],
+        'xl': ['1.25rem', { lineHeight: 'normal' }],
+        '2xl': ['1.5rem', { lineHeight: 'normal' }],
+        '3xl': ['1.875rem', { lineHeight: 'normal' }],
+        '4xl': ['2.25rem', { lineHeight: 'normal' }],
+        '5xl': ['3rem', { lineHeight: 'normal' }],
+        '6xl': ['3.75rem', { lineHeight: 'normal' }],
+        '7xl': ['4.5rem', { lineHeight: 'normal' }],
+        '8xl': ['6rem', { lineHeight: 'normal' }],
+        '9xl': ['8rem', { lineHeight: 'normal' }],
+      },
+      lineHeight: {
+        'normal': 'normal'
+      },
     }
   },
   plugins: [require("tailwindcss-animate")],
