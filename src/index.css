@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Salsa&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -14,9 +14,9 @@
 
     --card-foreground: 0 0% 3.9%;
 
-    --popover: 0 0% 100%;
+    --popover: #059851;
 
-    --popover-foreground: 0 0% 3.9%;
+    --popover-foreground: #059851;
 
     --primary: #40A2B7;
 
@@ -26,17 +26,17 @@
 
     --secondary-foreground: #5283AB;
 
-    --muted: 0 0% 96.1%;
+    --muted: #2E054E;
 
-    --muted-foreground: 0 0% 45.1%;
+    --muted-foreground: #2E054E;
 
-    --accent: 0 0% 96.1%;
+    --accent: #E3802A;
 
-    --accent-foreground: 0 0% 9%;
+    --accent-foreground: #E3802A;
 
-    --destructive: 0 84.2% 60.2%;
+    --destructive: #CC9C00;
 
-    --destructive-foreground: 0 0% 98%;
+    --destructive-foreground: #CC9C00;
 
     --border: 0 0% 89.8%;
 
@@ -55,7 +55,10 @@
     --chart-5: 27 87% 67%;
 
     --radius: 0.5rem;
+
+    --salsa: "Salsa", cursive;
   }
+
   .dark {
     --background: 0 0% 3.9%;
 
@@ -111,9 +114,12 @@
   * {
     @apply border-border;
   }
-  html, body{
+
+  html,
+  body {
     line-height: normal;
   }
+
   body {
     @apply bg-background text-foreground;
     font-family: "Roboto", sans-serif;

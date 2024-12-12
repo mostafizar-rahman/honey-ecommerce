@@ -64,11 +64,10 @@ export default {
         "25": "100px",
         "30": "120px",
       },
-      lineHeight: {
-        normal: '1.5',
-      },
+      fontFamily:{
+        salsa:"var(--salsa)"
+      }
     }
   },
   plugins: [require("tailwindcss-animate")],
 }
-
