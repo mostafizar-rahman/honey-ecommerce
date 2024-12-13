@@ -16,11 +16,11 @@ const RootLayout = () => {
     }, [pathname]);
 
     return (
-        <>
+        <div className='max-w-[1440px] mx-auto'>
             <Header />
             <Outlet />
             <Footer />
-        </>
+        </div>
     )
 }
 

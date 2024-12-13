@@ -6,7 +6,7 @@ import ProductsCategory from "@/components/sections/productsCategory"
 import Subscribe from "@/components/sections/subscribe"
 import { vacuumCleanerData } from "@/db/vacuumCleanerData"
 
-const Vacuum = () => {
+const Electric = () => {
   return (
     <main className="bg-background">
       <HeaderSearch
@@ -27,4 +27,4 @@ const Vacuum = () => {
   )
 }
 
-export default Vacuum
+export default Electric

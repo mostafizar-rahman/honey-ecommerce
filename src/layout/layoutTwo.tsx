@@ -13,12 +13,12 @@ const LayoutTwo = () => {
             body.classList.add(className);
         }
     }, [pathname]);
-    
+
     return (
-        <>
+        <div className='max-w-[1440px] mx-auto'>
             <Outlet />
             <Footer />
-        </>
+        </div>
     )
 }
 

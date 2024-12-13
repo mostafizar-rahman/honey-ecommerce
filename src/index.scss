@@ -123,10 +123,19 @@
   body {
     @apply bg-background text-foreground;
     font-family: "Roboto", sans-serif;
-    max-width: 1440px;
-    margin: auto;
+    // max-width: 1440px;
+    // margin: auto;
     background-color: black;
   }
+}
+
+.scrollbar-hidden {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
 }
 
 

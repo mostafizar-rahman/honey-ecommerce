@@ -5,24 +5,12 @@ import { cn } from "@/lib/utils"
 
 interface PropsType {
     textColor?: string,
-    inputStyle?:string
-    btnStyle?:string
+    inputStyle?: string
+    btnStyle?: string
 }
 const HeaderSearch = ({ textColor, inputStyle, btnStyle }: PropsType) => {
     return (
         <div>
-            <div className="flex flex-wrap gap-5 mb-5">
-                <Link to={"/"}>Home</Link>
-                <Link to={"/t-shirt"}>T-shirt</Link>
-                <Link to={"/bathroom"}>Bathroom</Link>
-                <Link to={"/shoes"}>Shoes</Link>
-                <Link to={"/pan-organizer"}>Pan Organizer</Link>
-                <Link to={"/doors"}>Doors</Link>
-                <Link to={"/vacuum"}>Vacuum</Link>
-                <Link to={"/honey"}>Honey</Link>
-                <Link to={"/product-view"}>ProductView</Link>
-            </div>
-
             <div className="search-field flex md:flex-row flex-col justify-between items-center lg:gap-x-[68px] gap-x-10 gap-y-6 lg:pb-30 pb-20 px-[15px] lg:px-15">
                 <div className="relative flex w-full shrink">
                     <p className={cn("absolute top-1/2 -translate-y-1/2 left-4", textColor)}><HoSearch className="lg:size-8 size-6" /></p>

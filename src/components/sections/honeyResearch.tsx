@@ -13,7 +13,7 @@ const HoneyResearch = () => {
                     </div>
                 </div>
             </div>
-            <div className="absolute xl:-top-[47px] top-0 xl:block hidden">
+            <div className="absolute xl:-top-[47px] top-0">
                 <img src="/images/honey/honey=bee.png" alt="honey" />
             </div>
             <div className="relative">

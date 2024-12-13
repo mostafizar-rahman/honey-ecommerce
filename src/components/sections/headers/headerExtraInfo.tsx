@@ -1,9 +1,17 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue, } from "@/components/ui/select"
 import { countriesList } from "@/db/countriesList"
 
 const HeaderExtraInfo = () => {
     const [selectCountry, setSelectCountry] = useState("")
+    // const [open, setOpen] = useState<boolean>()
+
+    // useEffect(() => {
+    //     if (open === true) {
+    //         document.body.style.cssText = `overflow:auto !important; margin-right:0 !important; margin-left:0 !important`;
+    //     }
+    // }, [open])
+
     return (
         <>
             <Select value={selectCountry} onValueChange={value => setSelectCountry(value)}>
@@ -17,7 +25,7 @@ const HeaderExtraInfo = () => {
                     {
                         countriesList.map(({ language, code, flag }) => {
                             return (
-                                <SelectItem key={code} value={language} className="text-2xl leading-relaxed font-bold text-[#666]">
+                                <SelectItem key={code} value={language} className="text-2xl leading-relaxed font-bold text-[#666] focus:bg-slate-100">
                                     <span>{language}</span>
                                     <img src={flag} alt='uk flag' className='inline ml-2 -mt-1 w-[18px]' />
                                 </SelectItem>
@@ -34,7 +42,7 @@ const HeaderExtraInfo = () => {
                 <SelectContent className="shadow-[0px_3px_4px_0px_rgba(0,0,0,0.25)] border-none bg-background">
                     {
                         countriesList.map(({ code, currencyName, symbol }) =>
-                            <SelectItem key={code} value="dollar" className="text-2xl leading-relaxed font-bold text-[#666]">{currencyName} ({symbol})</SelectItem>
+                            <SelectItem key={code} value="dollar" className="text-2xl leading-relaxed font-bold text-[#666] focus:bg-slate-100">{currencyName} ({symbol})</SelectItem>
                         )
                     }
                 </SelectContent>

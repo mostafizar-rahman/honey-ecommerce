@@ -6,7 +6,7 @@ import Bathroom from "@/pages/bathroom";
 import Shoes from "@/pages/shoes";
 import PanOrganizer from "@/pages/panOrganizer";
 import Doors from "@/pages/doors";
-import Vacuum from "@/pages/vacuum";
+import Electric from "@/pages/electric";
 import Honey from "@/pages/honey";
 import LayoutTwo from "@/layout/layoutTwo";
 import ProductView from "@/pages/product-view";
@@ -42,8 +42,8 @@ export const router = createBrowserRouter([
                 element: <Doors />
             },
             {
-                path: "/vacuum",
-                element: <Vacuum />
+                path: "/electric",
+                element: <Electric />
             },
             {
                 path: "/product-view",
