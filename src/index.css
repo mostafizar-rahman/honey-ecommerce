@@ -21,9 +21,9 @@
 
     --secondary-foreground: #5283ab;
 
-    --muted: #2E054E;
+    --muted: #2e054e;
 
-    --muted-foreground: #2E054E;
+    --muted-foreground: #2e054e;
 
     --accent: #e3802a;
 
@@ -135,29 +135,21 @@
 .t-shirt {
   color: var(--destructive-foreground);
 }
-.bathroom {
+.bathroom,
+.pan-organizer {
   color: var(--muted-foreground);
 }
-.pan-organizer .header,
-.pan-organizer .footer {
-  color: var(--muted-foreground);
-}
+
 .shoes {
   color: var(--green-foreground);
 }
-.doors .header,
-.doors .footer {
+.doors,
+.vacuum {
   color: var(--secondary-foreground);
 }
-.vacuum .header,
-.vacuum .footer {
-  color: var(--secondary-foreground);
-}
-.honey .header,
-.honey .footer {
+.honey {
   color: var(--accent-foreground);
 }
-
 
 /*---------- footer line color ---------------*/
 .home .footer .footer-line span {

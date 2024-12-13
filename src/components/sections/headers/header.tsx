@@ -1,5 +1,4 @@
 import { menuList } from "@/db/menuList"
-import HeaderSearch from "./headerSearch"
 import MobileNavigation from "./mobileNavigation"
 import HeaderExtraInfo from "./headerExtraInfo"
 import { Link, useLocation } from "react-router-dom"
@@ -11,6 +10,9 @@ const Header = () => {
     const findLogo = () => {
         if (pathName === "/" || pathName === "/doors" || pathName === "/vacuum") {
             return <img src="/images/logo.png" alt="logo" className="xl:w-auto w-32" />
+        }
+        else if (pathName === "/honey") {
+            return <img src="/images/logo-honey.png" alt="logo" className="xl:w-auto w-32 " />
         }
         else if (pathName === "/shoes") {
             return <img src="/images/logo-shoes.png" alt="logo" className="xl:w-auto w-32 " />

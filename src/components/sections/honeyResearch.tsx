@@ -2,7 +2,7 @@ import { Button } from "../ui/button"
 
 const HoneyResearch = () => {
     return (
-        <section className="bg-background relative">
+        <section className="bg-background relative pt-3">
             <div className="bg-[url('/images/honey/curve-bg.png')] bg-cover bg-no-repeat xl:py-[374px] lg:py-[280px] md:py-[230px] py-[200px]">
                 <div className="lg:px-[138px] px-[15px]">
                     <div className="max-w-[673px]">
@@ -16,11 +16,23 @@ const HoneyResearch = () => {
                     <img src="/images/honey/honey=bee.png" alt="honey" />
                 </div>
             </div>
-            <div>
-                <h1 className="text-[128px] font-italianno text-accent-foreground">Research</h1>
-                <div>
-                    <img src="/images/honey/honey-dripping-1.png" alt="img"/>
+            <div className="lg:px-[58px]">
+                <h1 className="text-[128px] font-italianno">Research</h1>
+                <div className="absolute left-0">
+                    <img src="/images/honey/honey-dripping-1.png" alt="img" />
                 </div>
+                <div className="float-right ">
+                    <div className="flex ">
+                        <div className="-mt-[200px]">
+                            <img src="/public/images/honey/honey-drippin-2.png" alt="img" />
+                        </div>
+                        <div className="max-w-[448px]">
+                            <h2 className="text-[80px] font-italianno">About</h2>
+                            <p className="font-medium text-[#40240C] tracking-[1.6px]">Honey is a golden, natural sweetener made by bees from  f lower nectar. Known for its rich flavor and health benefits,  honey is packed with antioxidants, enzymes, and nutrients,  making it a delicious and versatile addition to foods and  drinks.</p>
+                        </div>
+                    </div>
+                </div>
+                <p className="clear-both"></p>
             </div>
         </section>
     )
