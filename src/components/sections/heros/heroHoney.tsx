@@ -1,6 +1,6 @@
 const HeroHoney = () => {
     return (
-        <section className="bg-background">
+        <section className="bg-background pb-[88px]">
             <img src="/images/honey/hero-top-shape.png" alt="img" />
             <div className="text-[#40240C] text-center relative z-10 mt-20">
                 <div className="absolute z-[-1] -top-[64px]">

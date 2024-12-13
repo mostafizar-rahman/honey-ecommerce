@@ -11,10 +11,16 @@ import { bathroomToolsData } from "@/db/bathroomToolsData"
 import { shoesData } from "@/db/shoesData"
 import { doorData } from "@/db/doorData"
 import Subscribe from "@/components/sections/subscribe"
+import HeaderSearch from "@/components/sections/headers/headerSearch"
 
 const Home = () => {
     return (
         <main className="bg-background">
+            <HeaderSearch
+                textColor="text-secondary-foreground"
+                inputStyle="placeholder:text-[#97B5CD] border-secondary"
+                btnStyle="bg-secondary"
+            />
             <Prifing />
             <Ads />
             <Partners />

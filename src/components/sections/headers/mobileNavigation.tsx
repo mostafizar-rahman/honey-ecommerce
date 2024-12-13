@@ -17,7 +17,7 @@ const MobileNavigation = () => {
                             menuList.map(({ id, label, path }) => {
                                 return (
                                     <li key={id}>
-                                        <a href={path} className="text-primary-foreground text-[26px] leading-normal capitalize">
+                                        <a href={path} className="text-[26px] leading-normal capitalize">
                                             {label}
                                         </a>
                                     </li>

@@ -47,6 +47,10 @@ export default {
           DEFAULT: 'var(--destructive)',
           foreground: 'var(--destructive-foreground)'
         },
+        green: {
+          DEFAULT: 'var(--green)',
+          foreground: 'var(--green-foreground)'
+        },
         border: 'var(--border)',
         input: 'var(--input)',
         ring: 'var(--ring)',

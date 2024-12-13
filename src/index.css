@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Italianno&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Salsa&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Italianno&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Salsa&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -7,35 +7,35 @@
   :root {
     --background: #fff;
 
-    --foreground: 0 0% 3.9%;
-
-    --card: 0 0% 100%;
-
-    --card-foreground: 0 0% 3.9%;
+    --foreground: #0a0a0a;
 
     --popover: #059851;
 
     --popover-foreground: #059851;
 
-    --primary: #40A2B7;
+    --primary: #40a2b7;
 
-    --primary-foreground: #40A2B7;
+    --primary-foreground: #40a2b7;
 
-    --secondary: #5283AB;
+    --secondary: #5283ab;
 
-    --secondary-foreground: #5283AB;
+    --secondary-foreground: #5283ab;
 
     --muted: #2E054E;
 
     --muted-foreground: #2E054E;
 
-    --accent: #E3802A;
+    --accent: #e3802a;
 
-    --accent-foreground: #E3802A;
+    --accent-foreground: #e3802a;
 
-    --destructive: #CC9C00;
+    --destructive: #cc9c00;
 
-    --destructive-foreground: #CC9C00;
+    --destructive-foreground: #cc9c00;
+
+    --green: #02806e;
+
+    --green-foreground: #02806e;
 
     --border: 0 0% 89.8%;
 
@@ -127,4 +127,64 @@
     margin: auto;
     background-color: black;
   }
+}
+
+.home {
+  color: var(--primary-foreground);
+}
+.t-shirt {
+  color: var(--destructive-foreground);
+}
+.bathroom {
+  color: var(--muted-foreground);
+}
+.pan-organizer .header,
+.pan-organizer .footer {
+  color: var(--muted-foreground);
+}
+.shoes {
+  color: var(--green-foreground);
+}
+.doors .header,
+.doors .footer {
+  color: var(--secondary-foreground);
+}
+.vacuum .header,
+.vacuum .footer {
+  color: var(--secondary-foreground);
+}
+.honey .header,
+.honey .footer {
+  color: var(--accent-foreground);
+}
+
+
+/*---------- footer line color ---------------*/
+.home .footer .footer-line span {
+  background-color: var(--primary);
+}
+.t-shirt .footer .footer-line span {
+  background-color: var(--destructive);
+}
+
+.bathroom .footer .footer-line span {
+  background-color: var(--muted);
+}
+
+.pan-organizer .footer .footer-line span {
+  background-color: var(--muted);
+}
+
+.shoes .footer .footer-line span {
+  background-color: var(--green);
+}
+
+.doors .footer .footer-line span {
+  background-color: var(--secondary);
+}
+.vacuum .footer .footer-line span {
+  background-color: var(--secondary);
+}
+.honey .footer .footer-line span {
+  background-color: var(--accent);
 }
