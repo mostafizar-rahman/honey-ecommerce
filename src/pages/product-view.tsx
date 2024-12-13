@@ -4,7 +4,7 @@ import ProductShortInfo from "@/components/sections/productDetails/productShortI
 
 const ProductView = () => {
     return (
-        <main className="bg-background">
+        <main className="bg-background pt-[104px]">
             <div className="flex justify-between pr-[97px]">
                 <div className="flex gap-7.5">
                     <ProductPreview />

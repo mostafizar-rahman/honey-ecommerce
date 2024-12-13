@@ -1,4 +1,5 @@
 import { cn } from "@/lib/utils"
+import { Link } from "react-router-dom"
 
 interface ProductTypes {
     title: string,
@@ -31,7 +32,7 @@ const Card = ({ description, price, thumbnail, title, borderColor, titleColor, b
                     <p className="mt-2 pb-8 text-lg text-[rgba(82,131,171,0.60)] leading-normal">{description}</p>
                 </div>
                 <div className="flex justify-end">
-                    <button className={cn("bg-primary px-8 py-4 font-bold lg:text-[32px] text-[26px] text-white rounded-tl-[20px] rounded-br-[14px] hover:opacity-80 transition-all duration-500", btnColor)}>Show product</button>
+                    <Link to={"/product-view"} className={cn("bg-primary px-8 py-4 font-bold lg:text-[32px] text-[26px] text-white rounded-tl-[20px] rounded-br-[14px] hover:opacity-80 transition-all duration-500", btnColor)}>Show product</Link>
                 </div>
             </div>
         </div>

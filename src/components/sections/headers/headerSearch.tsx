@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom"
 import { Input } from "@/components/ui/input"
 import { HoHeart, HoSearch, HoUser } from "@/lib/icon"
 import { cn } from "@/lib/utils"

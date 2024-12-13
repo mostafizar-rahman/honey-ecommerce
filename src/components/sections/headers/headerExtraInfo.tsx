@@ -1,16 +1,9 @@
-import { useEffect, useState } from "react"
+import { useState } from "react"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue, } from "@/components/ui/select"
 import { countriesList } from "@/db/countriesList"
 
 const HeaderExtraInfo = () => {
     const [selectCountry, setSelectCountry] = useState("")
-    // const [open, setOpen] = useState<boolean>()
-
-    // useEffect(() => {
-    //     if (open === true) {
-    //         document.body.style.cssText = `overflow:auto !important; margin-right:0 !important; margin-left:0 !important`;
-    //     }
-    // }, [open])
 
     return (
         <>
