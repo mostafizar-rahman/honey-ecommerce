@@ -23,27 +23,27 @@ const Home = () => {
             />
             <Prifing />
             <Ads />
-            <Partners />
+            <Partners className="bg-[#47B5CC]" />
             <ProductsCategory />
-            <LatestProducts data={vacuumCleanerData} />
+            <LatestProducts
+                data={vacuumCleanerData}
+                sectionSpaceY="lg:mt-[180px] mt-25"
+            />
             <LatestProducts
                 data={honeyData}
                 borderColor="border-accent"
                 btnColor="bg-accent"
                 titleColor="text-accent-foreground"
-                sectionSpaceY="lg:mt-[120px] mt-20"
                 sectionTitleBorderColor="after:bg-accent"
             />
             <LatestProducts
                 data={seominsooData}
-                sectionSpaceY="lg:mt-[120px] mt-20"
             />
             <LatestProducts
                 data={tShirtData}
                 borderColor="border-destructive"
                 btnColor="bg-destructive"
                 titleColor="text-destructive-foreground"
-                sectionSpaceY="lg:mt-[120px] mt-20"
                 sectionTitleBorderColor="after:bg-destructive"
             />
             <LatestProducts
@@ -51,7 +51,6 @@ const Home = () => {
                 borderColor="border-muted"
                 btnColor="bg-muted"
                 titleColor="text-muted-foreground"
-                sectionSpaceY="lg:mt-[120px] mt-20"
                 sectionTitleBorderColor="after:bg-muted"
             />
             <LatestProducts
@@ -59,12 +58,10 @@ const Home = () => {
                 borderColor="border-popover"
                 btnColor="bg-popover"
                 titleColor="text-popover-foreground"
-                sectionSpaceY="lg:mt-[120px] mt-20"
                 sectionTitleBorderColor="after:bg-popover"
             />
             <LatestProducts
                 data={doorData}
-                sectionSpaceY="lg:mt-[120px] mt-20"
             />
             <Subscribe />
         </main>

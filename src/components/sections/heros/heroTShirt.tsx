@@ -1,6 +1,6 @@
 const HeroTShirt = () => {
     return (
-        <section className="bg-[linear-gradient(180deg,_#1A1400_33.33%,_#E5E0CF_99.9%)] pb-30 lg:px-[45px] px-[15px] flex lg:flex-row flex-col gap-x-[116px] overflow-hidden">
+        <section className="bg-[linear-gradient(180deg,_#1A1400_33.33%,_#E5E0CF_99.9%)] mb-20 pb-30 lg:px-[45px] px-[15px] flex lg:flex-row flex-col gap-x-[116px] overflow-hidden">
             <div className="relative flex items-center justify-center max-w-[595px] mx-auto">
                 {/* Overlay Text */}
                 <div className="absolute inset-0 flex flex-col items-center justify-center text-destructive-foreground [text-shadow:_4px_5px_1px_#E4DECA] md:text-8xl sm:text-7xl text-6xl font-bold">

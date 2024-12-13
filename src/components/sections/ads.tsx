@@ -2,7 +2,7 @@ import { Button } from "../ui/button"
 
 const Ads = () => {
     return (
-        <section className="max-w-[1142px] mx-auto lg:mt-[200px] mt-30">
+        <section className="max-w-[1142px] mx-auto lg:mt-[200px] lg:mb-30 mb-20 mt-30">
             <div>
                 <h2 className="uppercase text-secondary-foreground text-center lg:text-5xl text-4xl lg:leading-normal leading-normal font-bold">ORDER NOW EVERYTHING YOU NEED</h2>
                 <h3 className="text-center text-[rgba(82,131,171,0.60)] lg:text-[40px] text-3xl lg:leading-[150%] font-bold mt-4">Order now and get everything you need to make your home complete!  From essential household items to stylish decor, we have everything to  simplify your life and elevate your space. <span className="text-secondary-foreground font-black">Don't wait !</span></h3>

@@ -24,7 +24,7 @@ interface LatestProductsProps {
 
 const LatestProducts = ({ data, borderColor, titleColor, btnColor, sectionSpaceY, sectionTitleBorderColor }: LatestProductsProps) => {
   return (
-    <section className={cn("lg:mt-[160px] mt-25", sectionSpaceY)}>
+    <section className={cn("lg:mt-30 mt-20", sectionSpaceY)}>
       <div className="text-center">
         <SectionTItle>
           Latest <span className={cn("inline-block relative after:absolute after:right-2.5 after:bottom-0 after:w-[95%] after:h-1 after:bg-primary", sectionTitleBorderColor)}>Products</span>

@@ -2,7 +2,7 @@ import { categoryData } from "@/db/categoryData"
 
 const ProductsCategory = () => {
     return (
-        <div className="px-[15px] lg:px-7.5 pb-5 overflow-x-auto">
+        <div className="px-[15px] lg:px-7.5 overflow-x-auto">
             <div className="grid grid-cols-6 lg:gap-6 min-w-[1380px]">
                 {
                     categoryData.map(({ category, id, img }) => {

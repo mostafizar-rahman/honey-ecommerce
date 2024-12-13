@@ -20,9 +20,10 @@ const HeaderSearch = ({ textColor, inputStyle, btnStyle }: PropsType) => {
                 <Link to={"/doors"}>Doors</Link>
                 <Link to={"/vacuum"}>Vacuum</Link>
                 <Link to={"/honey"}>Honey</Link>
+                <Link to={"/product-view"}>ProductView</Link>
             </div>
 
-            <div className="search-field flex md:flex-row flex-col justify-between items-center lg:gap-x-[68px] gap-x-10 gap-y-6 pb-30 px-[15px] lg:px-15">
+            <div className="search-field flex md:flex-row flex-col justify-between items-center lg:gap-x-[68px] gap-x-10 gap-y-6 lg:pb-30 pb-20 px-[15px] lg:px-15">
                 <div className="relative flex w-full shrink">
                     <p className={cn("absolute top-1/2 -translate-y-1/2 left-4", textColor)}><HoSearch className="lg:size-8 size-6" /></p>
                     <Input placeholder="Search Products" className={cn("lg:pl-16 pl-10 pr-8 text-foreground", inputStyle)} />

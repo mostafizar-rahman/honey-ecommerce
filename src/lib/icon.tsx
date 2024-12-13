@@ -133,4 +133,53 @@ const HoInstagram = ({ className }: PropsType) => {
   )
 }
 
-export { HoUser, HoHeart, HoSearch, HoMapPoint, HoCall, HoMessage, HoWhatsapp, HoFacebook, HoTiktok, HoInstagram }
+const HoCopy = ({ className }: PropsType) => {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" className={className} width="32" height="33" viewBox="0 0 32 33" fill="none">
+      <path d="M22.6667 18.3668V22.3668C22.6667 27.7002 20.5334 29.8335 15.2001 29.8335H10.1334C4.80008 29.8335 2.66675 27.7002 2.66675 22.3668V17.3002C2.66675 11.9668 4.80008 9.8335 10.1334 9.8335H14.1334" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M22.6666 18.3668H18.4C15.2 18.3668 14.1333 17.3002 14.1333 14.1002V9.8335L22.6666 18.3668Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M15.4666 3.1665H20.7999" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M9.33325 7.1665C9.33325 4.95317 11.1199 3.1665 13.3333 3.1665H16.8266" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M29.3333 11.1665V19.4198C29.3333 21.4865 27.6533 23.1665 25.5867 23.1665" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M29.3333 11.1665H25.3333C22.3333 11.1665 21.3333 10.1665 21.3333 7.1665V3.1665L29.3333 11.1665Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+  )
+}
+
+const HoCar = ({ className }: PropsType) => {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" className={className} width="32" height="33" viewBox="0 0 32 33" fill="none">
+      <path d="M16 19.1665H17.3333C18.8 19.1665 20 17.9665 20 16.4998V3.1665H8C6 3.1665 4.25335 4.27315 3.34668 5.89982" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M2.66675 23.1665C2.66675 25.3798 4.45341 27.1665 6.66675 27.1665H8.00008C8.00008 25.6998 9.20008 24.4998 10.6667 24.4998C12.1334 24.4998 13.3334 25.6998 13.3334 27.1665H18.6667C18.6667 25.6998 19.8667 24.4998 21.3334 24.4998C22.8001 24.4998 24.0001 25.6998 24.0001 27.1665H25.3334C27.5467 27.1665 29.3334 25.3798 29.3334 23.1665V19.1665H25.3334C24.6001 19.1665 24.0001 18.5665 24.0001 17.8332V13.8332C24.0001 13.0998 24.6001 12.4998 25.3334 12.4998H27.0534L24.7734 8.51318C24.2934 7.68652 23.4134 7.1665 22.4534 7.1665H20.0001V16.4998C20.0001 17.9665 18.8001 19.1665 17.3334 19.1665H16.0001" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M10.6667 29.8333C12.1394 29.8333 13.3333 28.6394 13.3333 27.1667C13.3333 25.6939 12.1394 24.5 10.6667 24.5C9.19391 24.5 8 25.6939 8 27.1667C8 28.6394 9.19391 29.8333 10.6667 29.8333Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M21.3334 29.8333C22.8062 29.8333 24.0001 28.6394 24.0001 27.1667C24.0001 25.6939 22.8062 24.5 21.3334 24.5C19.8607 24.5 18.6667 25.6939 18.6667 27.1667C18.6667 28.6394 19.8607 29.8333 21.3334 29.8333Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M29.3333 16.5V19.1667H25.3333C24.6 19.1667 24 18.5667 24 17.8333V13.8333C24 13.1 24.6 12.5 25.3333 12.5H27.0533L29.3333 16.5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M2.66675 11.1665H10.6667" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M2.66675 15.1665H8.00008" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M2.66675 19.1665H5.33341" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+  )
+}
+
+const HoCardEdit = ({ className }: PropsType) => {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" className={className} width="32" height="33" viewBox="0 0 32 33" fill="none">
+      <path d="M2.66113 11.8335H15.3278" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M7.99512 22.5H10.6618" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M13.9951 22.5H19.3285" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M29.3278 16.5398V21.9798C29.3278 26.6598 28.1411 27.8332 23.4078 27.8332H8.58113C3.8478 27.8332 2.66113 26.6598 2.66113 21.9798V11.0198C2.66113 6.33984 3.8478 5.1665 8.58113 5.1665H19.3278" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M25.4351 6.00626L20.4885 10.9529C20.3018 11.1396 20.1151 11.5129 20.0751 11.7796L19.8085 13.6729C19.7151 14.3529 20.1951 14.8329 20.8751 14.7396L22.7685 14.4729C23.0351 14.4329 23.4085 14.2463 23.5951 14.0596L28.5418 9.11293C29.3951 8.25959 29.7951 7.27293 28.5418 6.01959C27.2751 4.75293 26.2885 5.15293 25.4351 6.00626Z" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M24.7275 6.71338C25.1542 8.22005 26.3275 9.39338 27.8209 9.80671" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+  )
+}
+
+const HoFolder = ({ className }: PropsType) => {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" className={className} width="24" height="25" viewBox="0 0 24 25" fill="none">
+      <path d="M22 11.5V17.5C22 21.5 21 22.5 17 22.5H7C3 22.5 2 21.5 2 17.5V7.5C2 3.5 3 2.5 7 2.5H8.5C10 2.5 10.33 2.94 10.9 3.7L12.4 5.7C12.78 6.2 13 6.5 14 6.5H17C21 6.5 22 7.5 22 11.5Z" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" />
+    </svg>
+  )
+}
+
+export { HoUser, HoHeart, HoSearch, HoMapPoint, HoCall, HoMessage, HoWhatsapp, HoFacebook, HoTiktok, HoInstagram, HoCopy, HoCar, HoCardEdit, HoFolder }

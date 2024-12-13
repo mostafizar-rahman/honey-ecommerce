@@ -7,7 +7,7 @@
   :root {
     --background: #fff;
 
-    --foreground: #0a0a0a;
+    --foreground: #000;
 
     --popover: #059851;
 
@@ -129,54 +129,102 @@
   }
 }
 
+
+// -------------- set color and background color base on body class
 .home {
   color: var(--primary-foreground);
+
+  .subscribe {
+    input::placeholder {
+      color: var(--primary-foreground);
+    }
+  }
+
+  .footer-line {
+    span {
+      background-color: var(--primary);
+    }
+  }
 }
+
 .t-shirt {
   color: var(--destructive-foreground);
+
+  .subscribe {
+    input::placeholder {
+      color: var(--destructive-foreground);
+    }
+  }
+
+  .footer-line {
+    span {
+      background-color: var(--destructive);
+    }
+  }
 }
+
 .bathroom,
 .pan-organizer {
   color: var(--muted-foreground);
+
+  .subscribe {
+    input::placeholder {
+      color: var(--muted-foreground);
+    }
+  }
+
+  .footer-line {
+    span {
+      background-color: var(--muted);
+    }
+  }
 }
 
 .shoes {
   color: var(--green-foreground);
+
+  .subscribe {
+    input::placeholder {
+      color: var(--green-foreground);
+    }
+  }
+
+  .footer-line {
+    span {
+      background-color: var(--green);
+    }
+  }
 }
+
 .doors,
 .vacuum {
   color: var(--secondary-foreground);
+
+  .subscribe {
+    input::placeholder {
+      color: var(--secondary-foreground);
+    }
+  }
+
+  .footer-line {
+    span {
+      background-color: var(--secondary);
+    }
+  }
 }
+
 .honey {
   color: var(--accent-foreground);
-}
 
-/*---------- footer line color ---------------*/
-.home .footer .footer-line span {
-  background-color: var(--primary);
-}
-.t-shirt .footer .footer-line span {
-  background-color: var(--destructive);
-}
+  .subscribe {
+    input::placeholder {
+      color: var(--accent-foreground);
+    }
+  }
 
-.bathroom .footer .footer-line span {
-  background-color: var(--muted);
-}
-
-.pan-organizer .footer .footer-line span {
-  background-color: var(--muted);
-}
-
-.shoes .footer .footer-line span {
-  background-color: var(--green);
-}
-
-.doors .footer .footer-line span {
-  background-color: var(--secondary);
-}
-.vacuum .footer .footer-line span {
-  background-color: var(--secondary);
-}
-.honey .footer .footer-line span {
-  background-color: var(--accent);
+  .footer-line {
+    span {
+      background-color: var(--accent);
+    }
+  }
 }

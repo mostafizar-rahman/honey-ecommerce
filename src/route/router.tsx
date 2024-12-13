@@ -9,6 +9,7 @@ import Doors from "@/pages/doors";
 import Vacuum from "@/pages/vacuum";
 import Honey from "@/pages/honey";
 import LayoutTwo from "@/layout/layoutTwo";
+import ProductView from "@/pages/product-view";
 
 
 export const router = createBrowserRouter([
@@ -43,6 +44,10 @@ export const router = createBrowserRouter([
             {
                 path: "/vacuum",
                 element: <Vacuum />
+            },
+            {
+                path: "/product-view",
+                element: <ProductView />
             },
         ],
     },
