@@ -1,4 +1,7 @@
+import { useTranslation } from "react-i18next";
+
 const HeroTShirt = () => {
+    const { t } = useTranslation();
     return (
         <section className="bg-[linear-gradient(180deg,_#1A1400_33.33%,_#E5E0CF_99.9%)] mb-20 pb-30 lg:px-[45px] px-[15px] flex lg:flex-row flex-col gap-x-[116px] overflow-hidden">
             <div className="relative flex items-center justify-center max-w-[595px] mx-auto">
@@ -21,7 +24,7 @@ const HeroTShirt = () => {
                     <p className="text-destructive-foreground lg:text-[32px] text-[26px]">’Every man has a story . What’s yours ’ </p>
                 </div>
                 <div className="lg:mt-8 mt-5 grid justify-center">
-                    <p className="text-center text-white xl:text-5xl lg:text-[40px] text-4xl">New Collection</p>
+                    <p className="text-center text-white xl:text-5xl lg:text-[40px] text-4xl">{t("new_collection")}</p>
                     <div className="flex justify-center flex-wrap">
                         <img src="/images/t-shirt/hoodie.png" alt="img" className="max-w-[204px] w-full h-auto" />
                         <img src="/images/t-shirt/hoodie.png" alt="img" className="max-w-[204px] w-full h-auto" />

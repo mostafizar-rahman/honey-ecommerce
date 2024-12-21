@@ -13,6 +13,7 @@ import { doorData } from "@/db/doorData"
 import Subscribe from "@/components/sections/subscribe"
 import HeaderSearch from "@/components/sections/headers/headerSearch"
 
+
 const Home = () => {
     return (
         <main className="bg-background">

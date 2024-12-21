@@ -1,29 +1,24 @@
-interface MenuType {
-    id: number | string,
-    label: string,
-    path: string
-}
-
-export const menuList: MenuType[] = [
+// menuList.js or .ts
+export const menuList = [
     {
-        "id": 1,
-        "label": "Home",
-        "path": "/"
+        id: 4,
+        labelKey: "home_nv", // This will be translated in your translation files
+        path: "/"
     },
     {
-        "id": 2,
-        "label": "Products",
-        "path": "/products"
+        id: 3,
+        labelKey: "products",
+        path: "/products"
     },
     {
-        "id": 1,
-        "label": "contact",
-        "path": "/contact"
+        id: 2,
+        labelKey: "contact",
+        path: "/contact"
     },
     {
-        "id": 1,
-        "label": "About",
-        "path": "/about"
+        id: 1,
+        labelKey: "about_us",
+        path: "/about"
     },
-
-]
+    // Add more menu items as needed
+];
