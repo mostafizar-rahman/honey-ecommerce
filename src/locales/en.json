@@ -59,7 +59,22 @@
 
 "vaccum": "Vacuum cleaner",
 "vaccum_details": "Minmax , vacuum cleaner strong suction power , new style portable bagged vacuum cleaner with HEPA , power 3000W"
-
+,
+"honey-details": "Honey Freshness brings you the pure, natural essence of honey, directly from the hive. Carefully harvested to preserve its authentic flavor, our honey is rich in nutrients, vibrant in color, and packed with natural sweetness. Enjoy the taste of nature's finest in every drop.",
+"honey-shop": "Shop now",
+"honey-research": "Research",
+"honey-about": "About",
+"honey-about-details": "Honey is a golden, natural sweetener made by bees from flower nectar. Known for its rich flavor and health benefits, honey is packed with antioxidants, enzymes, and nutrients, making it a delicious and versatile addition to foods and drinks.",
+"honey-benifits": "Benefits Honey",
+"honey-benefits-details": [
+  "- Energy Boost",
+  "- Immunity Support",
+  "- Soothes Sore Throats",
+  "- Aids Digestion",
+  "- Skincare"
+],
+"honey-history": "History Honey",
+"honey-history-details": "Honey, valued for thousands of years, was used by ancient civilizations for its sweetness and healing properties. It remains a timeless natural food."
 }
 
 
