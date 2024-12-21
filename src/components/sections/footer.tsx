@@ -1,8 +1,10 @@
 import { HoCall, HoFacebook, HoInstagram, HoMapPoint, HoMessage, HoTiktok, HoWhatsapp } from "@/lib/icon"
 import { useTranslation } from "react-i18next"
-const Footer: React.FC<{ language: string }> = ({ language }) => {
+
+const Footer: React.FC<{ language?: string }> = ({ language }) => {
   const { t } = useTranslation()
   return (
+
     <footer className="footer xl:px-[85px] lg:px-15 px-7.5 bg-background "   dir={language === "Leabnese" ? "rtl" : "ltr"}>
       <div className="flex md:justify-between justify-center items-center flex-wrap gap-10 pt-[88px] pb-20">
         <div>

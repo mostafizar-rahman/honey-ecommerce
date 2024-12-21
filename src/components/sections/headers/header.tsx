@@ -8,6 +8,7 @@ import { cn } from "@/lib/utils"
 interface HeaderProps {
     language: string;
     setLanguage: (lang: string) => void;
+   
 }
 const Header: React.FC<HeaderProps> = ({ language, setLanguage }) => {
     const { t } = useTranslation();
@@ -48,11 +49,11 @@ const Header: React.FC<HeaderProps> = ({ language, setLanguage }) => {
       // Update menu list to reflect translations
       const menuList = baseMenuList.map(item => ({
         ...item,
-        label: t(item.labelKey) // Use translation based on a key
+        labelkey: t(item.labelKey) // Use translation based on a key
     }));
 
     return (
-        <header className={cn("header px-[15px] lg:px-15 bg-background", paddingTop())}
+        <header  className={cn("header px-[15px] lg:px-15 bg-background", paddingTop())}
         dir={language === "Leabnese" ? "rtl" : "ltr"}>
             <div className="flex justify-between items-center pb-[88px]">
                 <Link to="/">
@@ -65,11 +66,11 @@ const Header: React.FC<HeaderProps> = ({ language, setLanguage }) => {
                     <nav className="lg:block hidden">
                         <ul className="flex gap-8 lg:flex-row flex-col">
                             {
-                                menuList.map(({ id, label, path }) => {
+                                menuList.map(({ id, labelkey, path }) => {
                                     return (
                                         <li key={id}>
                                             <Link to={path} className="xl:text-[32px] text-[26px] leading-normal capitalize">
-                                                {label}
+                                                {labelkey}
                                             </Link>
                                         </li>
                                     )

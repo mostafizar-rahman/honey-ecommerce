@@ -4,6 +4,10 @@ import { Sheet, SheetContent, SheetTrigger, } from "@/components/ui/sheet"
 import { Menu } from "lucide-react"
 
 const MobileNavigation = () => {
+
+    const onLanguageChange = (lang: string) => {
+        console.log(`Language changed to: ${lang}`);
+    };
     return (
         <Sheet>
             <SheetTrigger>
@@ -14,20 +18,22 @@ const MobileNavigation = () => {
                 <nav>
                     <ul className="flex gap-4 flex-col">
                         {
-                            menuList.map(({ id, label, path }) => {
+                            menuList.map(({ id, labelKey, path }) => {
                                 return (
                                     <li key={id}>
                                         <a href={path} className="text-[26px] leading-normal capitalize">
-                                            {label}
+                                            {labelKey}
                                         </a>
                                     </li>
                                 )
                             })
                         }
+            
                     </ul>
                 </nav>
                 <div className="inline-flex flex-col gap-5 mt-5">
-                    <HeaderExtraInfo />
+                <HeaderExtraInfo onLanguageChange={(lang: string) => onLanguageChange(lang)} />
+
                 </div>
             </SheetContent>
         </Sheet>

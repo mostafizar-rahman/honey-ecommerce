@@ -6,12 +6,19 @@ import LatestProductsTwoSlider from "@/components/sections/latestProductsTwoSlid
 import ProductsCategory from "@/components/sections/productsCategory"
 import Subscribe from "@/components/sections/subscribe"
 import { honeyData } from "@/db/honeyData"
+import { useState } from "react"
 
 const Honey = () => {
+    const [language, setLanguage] = useState("English");
+  
+      const handleLanguageChange = (lang: string) => {
+          setLanguage(lang);
+      
+      };
   return (
     <main className="bg-background">
       <HeroHoney />
-      <Header />
+      <Header language={language} setLanguage={handleLanguageChange}/>
       <HeaderSearch
         btnStyle="bg-accent"
         inputStyle="placeholder:text-accent-foreground border-accent"
