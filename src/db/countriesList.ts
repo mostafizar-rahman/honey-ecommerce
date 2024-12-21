@@ -16,20 +16,13 @@ export const countriesList: CountriesList = [
         currencyName:"Dollar",
         symbol: "$"
     },
+
     {
-        flag: "/images/flag/russia.png",
-        country: "Russia",
-        code: "RUB",
-        language:"Russkij",
-        currencyName:"Rouble",
-        symbol: "₽"
-    },
-    {
-        flag: "/images/flag/turkey.png",
-        country: "Turkey",
-        code: "TRY",
-        language:"Turkish",
-        currencyName:"Lira",
-        symbol: "₺"
+        flag: "/images/flag/lb.png",
+        country: "Lebanon",
+        code: "ar",
+        language:"Leabnese",
+        currencyName:"Lebanon",
+        symbol: "L.L"
     },
 ]

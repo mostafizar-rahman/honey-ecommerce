@@ -9,6 +9,7 @@ import { bathroomToolsData } from "@/db/bathroomToolsData"
 const Bathroom = () => {
     return (
         <main className="bg-background">
+            
             <HeaderSearch
                 btnStyle="bg-muted"
                 inputStyle="placeholder:text-muted-foreground border-muted"

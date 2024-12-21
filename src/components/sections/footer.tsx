@@ -1,8 +1,9 @@
 import { HoCall, HoFacebook, HoInstagram, HoMapPoint, HoMessage, HoTiktok, HoWhatsapp } from "@/lib/icon"
-
-const Footer = () => {
+import { useTranslation } from "react-i18next"
+const Footer: React.FC<{ language: string }> = ({ language }) => {
+  const { t } = useTranslation()
   return (
-    <footer className="footer xl:px-[85px] lg:px-15 px-7.5 bg-background ">
+    <footer className="footer xl:px-[85px] lg:px-15 px-7.5 bg-background "   dir={language === "Leabnese" ? "rtl" : "ltr"}>
       <div className="flex md:justify-between justify-center items-center flex-wrap gap-10 pt-[88px] pb-20">
         <div>
           <h2 className=" xl:text-[80px] lg:text-6xl text-[50px] font-salsa text-center md:text-left">
@@ -25,17 +26,17 @@ const Footer = () => {
           </div>
         </div>
         <div className="md:w-auto w-full">
-          <h6 className=" font-semibold lg:text-4xl text-3xl underline text-center">Quick Links</h6>
+          <h6 className=" font-semibold lg:text-4xl text-3xl underline text-center">{t("quick_links")}</h6>
           <ul className="flex flex-col items-center gap-4 mt-7">
-            <li><a href="#" className=" lg:text-[32px] sm:text-[26px] text-xl hover:opacity-80 transition-all duration-500">Home</a></li>
-            <li><a href="#" className=" lg:text-[32px] sm:text-[26px] text-xl hover:opacity-80 transition-all duration-500">About</a></li>
-            <li><a href="#" className=" lg:text-[32px] sm:text-[26px] text-xl hover:opacity-80 transition-all duration-500">Contact</a></li>
-            <li><a href="#" className=" lg:text-[32px] sm:text-[26px] text-xl hover:opacity-80 transition-all duration-500">Terms & Conditins</a></li>
-            <li><a href="#" className=" lg:text-[32px] sm:text-[26px] text-xl hover:opacity-80 transition-all duration-500">Privacy policy</a></li>
+            <li><a href="#" className=" lg:text-[32px] sm:text-[26px] text-xl hover:opacity-80 transition-all duration-500">{t("home")}</a></li>
+            <li><a href="#" className=" lg:text-[32px] sm:text-[26px] text-xl hover:opacity-80 transition-all duration-500">{t("about_us")}</a></li>
+            <li><a href="#" className=" lg:text-[32px] sm:text-[26px] text-xl hover:opacity-80 transition-all duration-500">{t("contact_us")}</a></li>
+            <li><a href="#" className=" lg:text-[32px] sm:text-[26px] text-xl hover:opacity-80 transition-all duration-500">{t("terms_conditions")}</a></li>
+            <li><a href="#" className=" lg:text-[32px] sm:text-[26px] text-xl hover:opacity-80 transition-all duration-500">{t("privacy_policy")}</a></li>
           </ul>
         </div>
         <div className="xl:w-auto w-full">
-          <h6 className=" font-semibold lg:text-4xl text-3xl underline text-center md:text-left">Have a questions ?</h6>
+          <h6 className=" font-semibold lg:text-4xl text-3xl underline text-center md:text-left">{t( "any_questions")}</h6>
           <ul className="flex flex-col items-center md:items-start gap-6 mt-7">
             <li className="flex items-center gap-4 ">
               <HoMapPoint />
@@ -64,8 +65,8 @@ const Footer = () => {
         <span className="inline-block w-[95px] h-[9px]"></span>
       </div>
       <div className="text-center  pt-11 pb-[57px]">
-        <p className="lg:text-2xl text-xl">This site is protected by recaptcha and the the google privacy policy and terms service apply </p>
-        <p className="lg:text-2xl text-xl font-semibold mt-6 flex gap-4 justify-center"><span>Meme Home</span> <span>2024 Copyright</span></p>
+        <p className="lg:text-2xl text-xl">{t("protected_by_recaptcha")} </p>
+        <p className="lg:text-2xl text-xl font-semibold mt-6 flex gap-4 justify-center"><span>Meme Home</span> <span>{t("copyright")}</span></p>
       </div>
     </footer>
   )

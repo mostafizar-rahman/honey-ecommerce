@@ -1,11 +1,17 @@
-import { menuList } from "@/db/menuList"
+import { menuList as baseMenuList } from "@/db/menuList";
+import { useTranslation } from "react-i18next"; 
 import MobileNavigation from "./mobileNavigation"
 import HeaderExtraInfo from "./headerExtraInfo"
+
 import { Link, useLocation } from "react-router-dom"
 import { cn } from "@/lib/utils"
-
-const Header = () => {
-    const pathName = useLocation().pathname
+interface HeaderProps {
+    language: string;
+    setLanguage: (lang: string) => void;
+}
+const Header: React.FC<HeaderProps> = ({ language, setLanguage }) => {
+    const { t } = useTranslation();
+    const pathName = useLocation().pathname;
 
     const findLogo = () => {
         if (pathName === "/" || pathName === "/doors" || pathName === "/vacuum") {
@@ -39,9 +45,15 @@ const Header = () => {
             return "pt-14"
         }
     }
+      // Update menu list to reflect translations
+      const menuList = baseMenuList.map(item => ({
+        ...item,
+        label: t(item.labelKey) // Use translation based on a key
+    }));
 
     return (
-        <header className={cn("header px-[15px] lg:px-15 bg-background", paddingTop())}>
+        <header className={cn("header px-[15px] lg:px-15 bg-background", paddingTop())}
+        dir={language === "Leabnese" ? "rtl" : "ltr"}>
             <div className="flex justify-between items-center pb-[88px]">
                 <Link to="/">
                     {findLogo()}
@@ -66,11 +78,11 @@ const Header = () => {
                         </ul>
                     </nav>
                     <div className="lg:flex gap-6 hidden">
-                        <HeaderExtraInfo />
+                    <HeaderExtraInfo onLanguageChange={setLanguage} />
                     </div>
                 </div>
             </div>
-            {/* <HeaderSearch /> */}
+          
         </header>
     )
 }

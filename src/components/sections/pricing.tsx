@@ -1,11 +1,13 @@
 import { pricingData } from "@/db/pricingData"
+import { useTranslation } from "react-i18next"
 
 const Pricing = () => {
+  const { t } = useTranslation()
   return (
     <section className="lg:pt-10 px-[15px] lg:px-15">
       <div>
-        <h2 className="uppercase text-secondary-foreground text-center lg:text-5xl text-4xl lg:leading-normal leading-normal font-bold">GET THE RIGHT BELT FOR YOUR PURCHASES.</h2>
-        <h3 className="text-center text-[rgba(82,131,171,0.60)] lg:text-[40px] text-3xl font-bold mt-4">INVESTING FROM $100.00</h3>
+        <h2 className="uppercase text-secondary-foreground text-center lg:text-5xl text-4xl lg:leading-normal leading-normal font-bold">{t('get_the_right_belt')}</h2>
+        <h3 className="text-center text-[rgba(82,131,171,0.60)] lg:text-[40px] text-3xl font-bold mt-4">{t("investment_from")}</h3>
       </div>
       <div className="grid xl:grid-cols-5 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 justify-center gap-4 mt-[64px]">
         {pricingData.map(({ bgColor, buys, color, description, id, img, revenue, title }) => (
