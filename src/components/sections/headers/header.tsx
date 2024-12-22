@@ -79,7 +79,7 @@ const Header: React.FC<HeaderProps> = ({ language, setLanguage }) => {
                         </ul>
                     </nav>
                     <div className="lg:flex gap-6 hidden">
-                    <HeaderExtraInfo onLanguageChange={setLanguage} />
+                    <HeaderExtraInfo onLanguageChange={setLanguage} language={language} />
                     </div>
                 </div>
             </div>

@@ -8,7 +8,6 @@ const RootLayout = () => {
     
     const pathname = useLocation().pathname
     const [language, setLanguage] = useState<string>("English");
-    
 
     useEffect(() => {
         const body = document.querySelector("body");
