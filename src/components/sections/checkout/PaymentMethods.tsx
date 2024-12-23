@@ -1,5 +1,5 @@
 import React from 'react';
-import whish from '../../../../public/images/payment/whish.png'
+import whish from 'images/payment/whish.png'
 import NotesSection from './NotesSection';
 
 const PaymentMethods: React.FC = () => {
