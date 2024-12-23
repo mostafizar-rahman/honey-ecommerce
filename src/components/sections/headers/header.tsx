@@ -61,7 +61,7 @@ const Header: React.FC<HeaderProps> = ({ language, setLanguage }) => {
                 </Link>
                 <div className="flex items-center xl:gap-[73px] gap-15">
                     <div className="lg:hidden block">
-                        <MobileNavigation />
+                        <MobileNavigation language={language} onLanguageChange={setLanguage} />
                     </div>
                     <nav className="lg:block hidden">
                         <ul className="flex gap-8 lg:flex-row flex-col">

@@ -17,6 +17,9 @@ export default {
 				md: 'calc(var(--radius) - 2px)',
 				sm: 'calc(var(--radius) - 4px)'
 			},
+			borderWidth: {
+				'3': '3px', // Custom border width
+			  },
 			colors: {
 				background: 'var(--background)',
 				foreground: 'var(--foreground)',
@@ -71,7 +74,9 @@ export default {
 			},
 			fontFamily: {
 				salsa: 'var(--salsa)',
-				italianno: 'var(--italianno)'
+				italianno: 'var(--italianno)',
+				roboto: ['Roboto', 'sans-serif'],
+				inter: ['Inter', 'sans-serif'],
 			},
 			fontSize: {
 				xs: [

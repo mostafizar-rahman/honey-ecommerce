@@ -3,11 +3,11 @@ import HeaderExtraInfo from "./headerExtraInfo"
 import { Sheet, SheetContent, SheetTrigger, } from "@/components/ui/sheet"
 import { Menu } from "lucide-react"
 
-const MobileNavigation = () => {
-
-    const onLanguageChange = (lang: string) => {
-        console.log(`Language changed to: ${lang}`);
-    };
+interface MobileNavigationProps {
+    language: string;
+    onLanguageChange: (lang: string) => void;
+  }
+  const MobileNavigation: React.FC<MobileNavigationProps> = ({ language, onLanguageChange }) => {
     return (
         <Sheet>
             <SheetTrigger>
@@ -32,7 +32,8 @@ const MobileNavigation = () => {
                     </ul>
                 </nav>
                 <div className="inline-flex flex-col gap-5 mt-5">
-                <HeaderExtraInfo onLanguageChange={(lang: string) => onLanguageChange(lang)} />
+                <HeaderExtraInfo language={language} onLanguageChange={onLanguageChange} />
+            
 
                 </div>
             </SheetContent>

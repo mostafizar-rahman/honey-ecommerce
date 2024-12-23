@@ -4,7 +4,11 @@ import { countriesList } from "@/db/countriesList";
 import i18n from "@/i18n";
 
 interface HeaderExtraInfoProps {
+
   onLanguageChange: (lang: string) => void;
+
+  language: string;
+
 }
 
 const HeaderExtraInfo: React.FC<HeaderExtraInfoProps> = ({ onLanguageChange }) => {
@@ -21,8 +25,8 @@ const HeaderExtraInfo: React.FC<HeaderExtraInfoProps> = ({ onLanguageChange }) =
     );
     if (selectedCountry) {
       setCurrency(`${selectedCountry.currencyName} (${selectedCountry.symbol})`);
-      i18n.changeLanguage(code); // Change language in i18n
-      onLanguageChange(language); // Notify parent component
+      i18n.changeLanguage(code);
+      onLanguageChange(language);
     }
   };
 

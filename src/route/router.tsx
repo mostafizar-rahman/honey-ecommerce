@@ -11,6 +11,10 @@ import Honey from "@/pages/honey";
 import LayoutTwo from "@/layout/layoutTwo";
 import ProductView from "@/pages/product-view";
 import LayoutThree from "@/layout/layoutThree";
+import CheckoutForm from "@/pages/checkout";
+import AboutUs from "@/pages/about";
+import ContactUs from "@/pages/contact";
+import Login from "@/pages/auth/Login";
 
 
 export const router = createBrowserRouter([
@@ -45,6 +49,22 @@ export const router = createBrowserRouter([
             {
                 path: "/electric",
                 element: <Electric />
+            },
+            {
+                path: "checkout",
+                element: <CheckoutForm />
+            },
+            {
+                path: "aboutus",
+                element: <AboutUs />
+            },
+            {
+                path: "contact",
+                element: <ContactUs />
+            },
+            {
+                path: "login",
+                element: <Login />
             },
         ],
     },

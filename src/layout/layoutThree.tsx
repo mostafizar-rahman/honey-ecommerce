@@ -4,6 +4,7 @@ import { Outlet, useLocation } from "react-router-dom"
 
 const LayoutThree = () => {
     const pathname = useLocation().pathname
+    const language = "English";
     useEffect(() => {
         const body = document.querySelector("body");
         const className = pathname === "/" ? "home" : pathname.slice(1).replace("/", "-");
@@ -17,7 +18,7 @@ const LayoutThree = () => {
     return (
         <div className='max-w-[1440px] mx-auto'>
             <Outlet />
-            <Footer />
+            <Footer language={language}/>
         </div>
     )
 }
