@@ -4,7 +4,7 @@ const AboutUs = () => {
   return (
     <div className="bg-teal-300 pb-10 ">
       {/* About Us Section */}
-      <section className="text-center py-10 bg-teal-300 rounded-b-2xl">
+      <section className="text-center py-10 bg-[#47B5CC] rounded-b-2xl">
         <h1 className="text-3xl font-bold text-white mb-6">About US</h1>
         <p className="text-lg text-teal-900 max-w-3xl mx-auto">
           We are a group of companies that manage multiple specialized websites
