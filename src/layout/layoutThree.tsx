@@ -1,6 +1,6 @@
 import Footer from "@/components/sections/footer"
 import { useEffect } from "react";
-import { Outlet, useLocation } from "react-router-dom"
+import { Outlet, ScrollRestoration, useLocation } from "react-router-dom"
 
 const LayoutThree = () => {
     const pathname = useLocation().pathname
@@ -18,6 +18,7 @@ const LayoutThree = () => {
         <div className='max-w-[1440px] mx-auto'>
             <Outlet />
             <Footer />
+            <ScrollRestoration />
         </div>
     )
 }

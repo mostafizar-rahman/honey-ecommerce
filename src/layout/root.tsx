@@ -1,4 +1,4 @@
-import { Outlet, useLocation } from 'react-router-dom'
+import { Outlet, ScrollRestoration, useLocation } from 'react-router-dom'
 import Header from "@/components/sections/headers/header"
 import Footer from "@/components/sections/footer"
 import { useEffect } from 'react';
@@ -25,6 +25,7 @@ const RootLayout = () => {
       <Header language={language} setLanguage={setLanguage} />
             <Outlet />
            <Footer language={language} />
+           <ScrollRestoration/>
         </div>
     )
 }
